@@ -3,7 +3,7 @@ import MarkdownPreviewer from './components/MarkdownPreviewer';
 
 function App() {
   return (
-    <div className='h-screen'>
+    <div className='flex flex-col h-screen'>
     <Header/>
     <MarkdownPreviewer />
     </div>

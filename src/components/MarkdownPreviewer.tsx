@@ -60,9 +60,9 @@ const MarkdownPreviewer: React.FC = () => {
     renderMarkdown();
   }, [markdown]);
   return (
-    <div className="flex h-full gap-2 p-4 font-sans text-base">
+    <div className="flex h-full gap-2 p-2 first-line:font-sans text-base">
       {/* Input Area */}
-      <div className="w-1/2">
+      <div className="flex flex-col h-full w-1/2">
         <div className="flex flex-wrap gap-1 mb-2">
           <span>Input</span>.
           <a href="http://localhost:5173/" className="underline text-blue-600">
@@ -84,7 +84,7 @@ const MarkdownPreviewer: React.FC = () => {
       </div>
 
       {/* Output Area */}
-      <div className="w-1/2">
+      <div className="flex flex-col h-full w-1/2">
         <div className="flex flex-wrap gap-1 mb-2">
           <SelectInput value={selectedPreviewer} onChange={(e) => setSelectedPreviewer(e.target.value)} options={previewerOptions} />
           .
